@@ -1,0 +1,99 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+
+    margin: 16px 15px;
+}
+.cardEnt, .cardSai{
+    display: flex;
+    flex-direction: row;
+   
+    width: auto;    
+    height: 156px;
+
+    padding: 1rem;
+
+}
+.side{
+    background-color: var(--color-secundary);
+
+    width: 4px;
+    height: 156px;
+
+    border-top-left-radius: var(--default-margin);
+    border-bottom-left-radius: var(--default-margin);
+
+    margin-right: 8px;
+}
+.sideSai{
+    background-color: var(--color-grey-3);
+
+    width: 4px;
+    height: 156px;
+
+    border-top-left-radius: var(--default-margin);
+    border-bottom-left-radius: var(--default-margin);
+
+    margin-right: 8px;
+}
+.cardInformation{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.cardTitle{
+    font-size: var(--font-headline);
+    font-weight: var(--font-weight-bold);
+
+    color: var(--color-grey-4);
+}
+.cardType{
+    font-size: var(--font-body);
+    font-weight: var(--font-weight-regular);
+
+    color: var(--color-grey-4);
+}
+.cardValue{
+    font-size: var(--font-body);
+    font-weight: var(--font-weight-regular);
+
+    color: var(--color-grey-4);
+}
+.lixo{
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    .cardContainer{
+        margin: 16px 0;
+
+        gap: 2rem;
+    }
+    
+    .cardEnt, .cardSai{
+        padding: 0;
+
+        height: 87px;
+    }
+    .side, .sideSai{
+        height: 87px;
+    }
+    .cardInformation{
+        flex-direction: row;
+
+        width: 100%;
+
+        gap: 1.5rem;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,133 @@
+.containerMainForm{
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+
+    margin: 0px 15px 16px 15px
+}
+.mainTxt{
+    font-size: var(--font-title-4);
+    font-weight: var(--font-weight-regular);
+    
+    color: var(--color-grey-4);
+}
+
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-self: center;
+
+    width: auto;
+}
+.inputDescription{
+    padding: 0.5rem;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    color: var(--color-grey-3);
+}
+.descriptionExample{
+    font-size: var(--font-title-4);
+    font-weight: var(--font-weight-regular);
+
+    color: var(--color-grey-3);
+}
+
+.bottomContainerForm{
+    display: flex;
+    flex-direction: row;
+
+    height: auto;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+.valueContainer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: space-around;
+
+    width: 50%;
+    height: 94px;
+}
+.valueTxt{
+    font-size: var(--font-title-4); 
+    font-weight: var(--font-weight-regular);
+    
+    color: var(--color-grey-4);
+}
+.valueInput{
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+}
+.numberInput{
+    width: 30%;
+
+    border: none;
+    outline: none;
+
+    padding: 0.5rem;
+
+    color: var(--color-grey-3);
+    background-color: transparent;
+}
+.RS{
+    color: var(--color-grey-4);
+
+    font-size: var(--font-headline);
+}
+
+.typeContainer{
+    height: 94px;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+.typeTxt{
+    font-size: var(--font-title-4);
+
+    color: var(--color-grey-4);
+}
+.typeSelect{
+    width: 100%;
+
+    padding: 0.6rem;
+
+    border: none;
+    outline: none;
+
+    color: var(--color-grey-4);
+}
+.formButton{
+   width: auto;
+   height: 48px;
+   
+   background-color: var(--color-primary);
+   color: var(--color-grey-1);
+
+   border-radius: var(--default-margin);
+
+   font-size: var(--button-font-1);
+   font-weight: var(--font-weight-regular);
+
+   border: none;
+   outline: none;
+
+   cursor: pointer;
+}
