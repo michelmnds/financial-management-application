@@ -1,1 +1,7 @@
-# react-entrega-s1-template-nu-kenzie
+## 📝 Description
+
+Fully functional and responsive financial manegment app
+
+## ✅ TODO
+
+Functional search bar
