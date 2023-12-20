@@ -23,7 +23,7 @@ function App() {
       ) : (
         <HomePage>
           <button className="buttonHome" onClick={() => setPage("LandingPage")}>
-            Início
+            Menu
           </button>
         </HomePage>
       )}
