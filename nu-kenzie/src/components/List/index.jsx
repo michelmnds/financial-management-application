@@ -1,23 +1,22 @@
-import './style.css'
+import "./style.css";
 
+export function List({ children, listTransactions }) {
+  console.log(listTransactions);
+  if (!listTransactions.length) {
+    return (
+      <div className="listContainer">
+        <span className="listTxt">Financial Summary</span>
 
-export function List({children}, listTransactions){
+        <p className="listSecondaryTxt">You don't have any</p>
+      </div>
+    );
+  } else {
+    return (
+      <div className="listContainer">
+        <span className="listTxt">Financial Summary</span>
 
-    if (listTransactions.lenght === 0){
-        return (
-            <div className='listContainer'>
-                <span className='listTxt'>Resumo financeiro</span>
-                    
-                <p className='listSecondaryTxt'>Você ainda não possui nenhum lançamento</p>
-            </div>
-        )
-    } else {
-        return (
-            <div className='listContainer'>
-                <span className='listTxt'>Resumo financeiro</span>
-                    
-                {children}
-            </div>
-        )
-    }  
-} 
+        {children}
+      </div>
+    );
+  }
+}
